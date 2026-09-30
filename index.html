@@ -225,6 +225,15 @@
   border-radius:10px;padding:12px;max-width:280px;text-align:center}
 .fx-fig figcaption{font-size:.85em;color:var(--muted,#666);margin-top:6px}
 .fx-diagram{width:100%;height:auto}
+
+/* === Diagram colour palette (2026-09-30): fixed pastel fills, dark node ink === */
+.dg .p1{fill:#dbeafe;stroke:currentColor;stroke-width:1.6}
+.dg .p2{fill:#dcfce7;stroke:currentColor;stroke-width:1.6}
+.dg .p3{fill:#fef3c7;stroke:currentColor;stroke-width:1.6}
+.dg .p4{fill:#ffe4e6;stroke:currentColor;stroke-width:1.6}
+.dg .p5{fill:#ede9fe;stroke:currentColor;stroke-width:1.6}
+.dg .p6{fill:#cffafe;stroke:currentColor;stroke-width:1.6}
+.dg .nt{fill:#1a2433}
 </style>
 <link rel="stylesheet" href="assets/topics.css">
 </head>
@@ -755,6 +764,30 @@ document.addEventListener('DOMContentLoaded', function(){
 <nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-nav-link" href="#ch-1">Accounting: Journal, Ledger &amp;amp; Trial Balance</a> <a class="ch-nav-link" href="#ch-2">Partnership, Company &amp;amp; Cash Flow Accounts</a> <a class="ch-nav-link" href="#ch-3">Business Laws (Contract Act, Sale of Goods, LLP, Companies Act 2013)</a> <a class="ch-nav-link" href="#ch-4">Quantitative Aptitude (Interest, Ratios, Statistics, Probability)</a> <a class="ch-nav-link" href="#ch-5">Business Economics (Micro &amp;amp; Macro)</a> <a class="ch-nav-link" href="#ch-6">Income Tax: Heads of Income, Deductions &amp;amp; Computation Basics</a> <a class="ch-nav-link" href="#ch-7">GST: Levy, Input Tax Credit &amp;amp; Returns Basics</a> <a class="ch-nav-link" href="#ch-8">Auditing: Standards, Evidence &amp;amp; Company Audit</a> <a class="ch-nav-link" href="#ch-9">Financial Management: Ratios, Leverage &amp;amp; Capital Budgeting</a> <a class="ch-nav-link" href="#ch-10">Business Correspondence, Ethics &amp;amp; Communication</a></nav>
 <article class="chapter" id="ch-1">
 <h3>1. Accounting: Journal, Ledger &amp; Trial Balance</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Trial Balance — six errors it cannot catch</p>
+  <svg class="dg" viewBox="0 0 680 188" role="img" aria-label="Trial Balance — six errors it cannot catch">
+    <rect class="p1" x="20" y="20" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="110.6" y="43">Omission</text>
+    <text class="ts nt" x="110.6" y="62">entry skipped</text>
+    <rect class="p2" x="217.2" y="20" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="307.8" y="43">Commission</text>
+    <text class="ts nt" x="307.8" y="62">wrong account</text>
+    <rect class="p3" x="414.4" y="20" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="505" y="43">Principle</text>
+    <text class="ts nt" x="505" y="62">capital vs revenue</text>
+    <rect class="p4" x="20" y="100" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="110.6" y="123">Compensating</text>
+    <text class="ts nt" x="110.6" y="142">errors cancel out</text>
+    <rect class="p5" x="217.2" y="100" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="307.8" y="123">Original entry</text>
+    <text class="ts nt" x="307.8" y="142">wrong amount, both sides</text>
+    <rect class="p6" x="414.4" y="100" width="181.2" height="64" rx="12"/>
+    <text class="th nt" x="505" y="123">Duplication</text>
+    <text class="ts nt" x="505" y="142">posted twice</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div>
 <div class="chapter-body">
 <p>Every rupee that moves through a business leaves two footprints — one debit and one credit. The entire accounting cycle of the CA Foundation paper rests on this duality: <strong>Journal</strong> records transactions in chronological order, the <strong>Ledger</strong> classifies them account-wise, and the <strong>Trial Balance</strong> tests the arithmetic of the whole exercise.</p>
 <h4>The golden rules (traditional classification)</h4>
@@ -768,21 +801,21 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="dg-wrap">
   <p class="dg-title">The three golden rules of accounting</p>
   <svg class="dg" viewBox="0 0 680 300" role="img" aria-label="golden rules">
-    <rect class="bxa" x="30" y="40" width="200" height="170" rx="10"/>
-    <text class="th" x="130" y="70">PERSONAL</text>
-    <text class="ts" x="130" y="102">Debit the RECEIVER</text>
-    <text class="ts" x="130" y="128">Credit the GIVER</text>
-    <text class="ts" x="130" y="154">e.g. Ram&#x27;s A/c</text>
-    <rect class="bxb" x="240" y="40" width="200" height="170" rx="10"/>
-    <text class="th" x="340" y="70">REAL</text>
-    <text class="ts" x="340" y="102">Debit what COMES IN</text>
-    <text class="ts" x="340" y="128">Credit what GOES OUT</text>
-    <text class="ts" x="340" y="154">e.g. Machinery A/c</text>
-    <rect class="bxg" x="450" y="40" width="200" height="170" rx="10"/>
-    <text class="th" x="550" y="70">NOMINAL</text>
-    <text class="ts" x="550" y="102">Debit EXPENSES &amp; LOSSES</text>
-    <text class="ts" x="550" y="128">Credit INCOMES &amp; GAINS</text>
-    <text class="ts" x="550" y="154">e.g. Salary, Rent received</text>
+    <rect class="p1" x="30" y="40" width="200" height="170" rx="10"/>
+    <text class="th nt" x="130" y="70">PERSONAL</text>
+    <text class="ts nt" x="130" y="102">Debit the RECEIVER</text>
+    <text class="ts nt" x="130" y="128">Credit the GIVER</text>
+    <text class="ts nt" x="130" y="154">e.g. Ram&#x27;s A/c</text>
+    <rect class="p2" x="240" y="40" width="200" height="170" rx="10"/>
+    <text class="th nt" x="340" y="70">REAL</text>
+    <text class="ts nt" x="340" y="102">Debit what COMES IN</text>
+    <text class="ts nt" x="340" y="128">Credit what GOES OUT</text>
+    <text class="ts nt" x="340" y="154">e.g. Machinery A/c</text>
+    <rect class="p3" x="450" y="40" width="200" height="170" rx="10"/>
+    <text class="th nt" x="550" y="70">NOMINAL</text>
+    <text class="ts nt" x="550" y="102">Debit EXPENSES &amp; LOSSES</text>
+    <text class="ts nt" x="550" y="128">Credit INCOMES &amp; GAINS</text>
+    <text class="ts nt" x="550" y="154">e.g. Salary, Rent received</text>
     <text class="tss" x="340" y="252">One test covers all three: is it a person, a thing, or an expense/income?</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
@@ -802,29 +835,29 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="dg-wrap">
   <p class="dg-title">The accounting cycle — journal to balance sheet</p>
   <svg class="dg" viewBox="0 0 680 260" role="img" aria-label="accounting cycle">
-    <rect class="bxb" x="22" y="60" width="118" height="76" rx="10"/>
-    <text class="t" x="81" y="90">JOURNAL</text>
-    <text class="tss" x="81" y="112">first entry</text>
+    <rect class="p1" x="22" y="60" width="118" height="76" rx="10"/>
+    <text class="t nt" x="81" y="90">JOURNAL</text>
+    <text class="tss nt" x="81" y="112">first entry</text>
     <line class="ln" x1="140.0" y1="98.0" x2="145.0" y2="98.0"/>
     <polygon class="hd" points="154.0,98.0 145.0,103.0 145.0,93.0"/>
-    <rect class="bxb" x="154" y="60" width="118" height="76" rx="10"/>
-    <text class="t" x="213" y="90">LEDGER</text>
-    <text class="tss" x="213" y="112">classify</text>
+    <rect class="p2" x="154" y="60" width="118" height="76" rx="10"/>
+    <text class="t nt" x="213" y="90">LEDGER</text>
+    <text class="tss nt" x="213" y="112">classify</text>
     <line class="ln" x1="272.0" y1="98.0" x2="277.0" y2="98.0"/>
     <polygon class="hd" points="286.0,98.0 277.0,103.0 277.0,93.0"/>
-    <rect class="bxb" x="286" y="60" width="118" height="76" rx="10"/>
-    <text class="t" x="345" y="90">TRIAL BALANCE</text>
-    <text class="tss" x="345" y="112">arithmetical check</text>
+    <rect class="p3" x="286" y="60" width="118" height="76" rx="10"/>
+    <text class="t nt" x="345" y="90">TRIAL BALANCE</text>
+    <text class="tss nt" x="345" y="112">arithmetical check</text>
     <line class="ln" x1="404.0" y1="98.0" x2="409.0" y2="98.0"/>
     <polygon class="hd" points="418.0,98.0 409.0,103.0 409.0,93.0"/>
-    <rect class="bxb" x="418" y="60" width="118" height="76" rx="10"/>
-    <text class="t" x="477" y="90">TRADING &amp; P&amp;L</text>
-    <text class="tss" x="477" y="112">profit/loss</text>
+    <rect class="p4" x="418" y="60" width="118" height="76" rx="10"/>
+    <text class="t nt" x="477" y="90">TRADING &amp; P&amp;L</text>
+    <text class="tss nt" x="477" y="112">profit/loss</text>
     <line class="ln" x1="536.0" y1="98.0" x2="541.0" y2="98.0"/>
     <polygon class="hd" points="550.0,98.0 541.0,103.0 541.0,93.0"/>
-    <rect class="bxb" x="550" y="60" width="118" height="76" rx="10"/>
-    <text class="t" x="609" y="90">BALANCE SHEET</text>
-    <text class="tss" x="609" y="112">position</text>
+    <rect class="p5" x="550" y="60" width="118" height="76" rx="10"/>
+    <text class="t nt" x="609" y="90">BALANCE SHEET</text>
+    <text class="tss nt" x="609" y="112">position</text>
     <text class="tss" x="340" y="190">The cycle repeats every accounting year — TB is the bridge to final accounts.</text>
     <text class="tss" x="340" y="216">Errors TB cannot catch: omission, commission, principle, compensating.</text>
   </svg>
@@ -847,6 +880,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <article class="chapter" id="ch-2">
 <h3>2. Partnership, Company &amp; Cash Flow Accounts</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Partnership changes — three adjustments</p>
+  <svg class="dg" viewBox="0 0 680 208" role="img" aria-label="Partnership changes — three adjustments">
+    <rect class="p1" x="20" y="22" width="640" height="46" rx="12"/>
+    <text class="th nt" x="340" y="42">Admission</text>
+    <text class="ts nt" x="340" y="58">['sacrificing ratio', 'goodwill premium']</text>
+    <rect class="p2" x="20" y="80" width="606" height="46" rx="12"/>
+    <text class="th nt" x="323" y="100">Retirement</text>
+    <text class="ts nt" x="323" y="116">['gaining ratio', 'share of profits']</text>
+    <rect class="p3" x="20" y="138" width="572" height="46" rx="12"/>
+    <text class="th nt" x="306" y="158">Death</text>
+    <text class="ts nt" x="306" y="174">['deceased’s share', 'to executors']</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div>
 <div class="chapter-body">
 <p>These three topics dominate the accounting paper's long questions. Each has a fixed skeleton — learn the skeleton first, then the numbers fall in.</p>
 <h4>Partnership accounts</h4>
@@ -870,25 +918,25 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="dg-wrap">
   <p class="dg-title">Cash Flow Statement (AS 3) — the three activities</p>
   <svg class="dg" viewBox="0 0 680 300" role="img" aria-label="cash flow activities">
-    <rect class="bxg" x="30" y="50" width="190" height="160" rx="10"/>
-    <text class="th" x="125" y="80">OPERATING</text>
-    <text class="ts" x="125" y="110">day-to-day business</text>
-    <text class="ts" x="125" y="134">receipts from customers,</text>
-    <text class="ts" x="125" y="158">payments to suppliers</text>
+    <rect class="p1" x="30" y="50" width="190" height="160" rx="10"/>
+    <text class="th nt" x="125" y="80">OPERATING</text>
+    <text class="ts nt" x="125" y="110">day-to-day business</text>
+    <text class="ts nt" x="125" y="134">receipts from customers,</text>
+    <text class="ts nt" x="125" y="158">payments to suppliers</text>
     <line class="ln" x1="220.0" y1="130.0" x2="231.0" y2="130.0"/>
     <polygon class="hd" points="240.0,130.0 231.0,134.9 231.0,125.0"/>
-    <rect class="bxb" x="240" y="50" width="190" height="160" rx="10"/>
-    <text class="th" x="335" y="80">INVESTING</text>
-    <text class="ts" x="335" y="110">long-term assets</text>
-    <text class="ts" x="335" y="134">purchase / sale of PPE,</text>
-    <text class="ts" x="335" y="158">investments made</text>
+    <rect class="p2" x="240" y="50" width="190" height="160" rx="10"/>
+    <text class="th nt" x="335" y="80">INVESTING</text>
+    <text class="ts nt" x="335" y="110">long-term assets</text>
+    <text class="ts nt" x="335" y="134">purchase / sale of PPE,</text>
+    <text class="ts nt" x="335" y="158">investments made</text>
     <line class="ln" x1="430.0" y1="130.0" x2="441.0" y2="130.0"/>
     <polygon class="hd" points="450.0,130.0 441.0,134.9 441.0,125.0"/>
-    <rect class="bxa" x="450" y="50" width="190" height="160" rx="10"/>
-    <text class="th" x="545" y="80">FINANCING</text>
-    <text class="ts" x="545" y="110">capital structure</text>
-    <text class="ts" x="545" y="134">shares issued, loans,</text>
-    <text class="ts" x="545" y="158">dividends paid</text>
+    <rect class="p3" x="450" y="50" width="190" height="160" rx="10"/>
+    <text class="th nt" x="545" y="80">FINANCING</text>
+    <text class="ts nt" x="545" y="110">capital structure</text>
+    <text class="ts nt" x="545" y="134">shares issued, loans,</text>
+    <text class="ts nt" x="545" y="158">dividends paid</text>
     <text class="tss" x="340" y="252">AS 3 · Net increase in cash = Operating + Investing + Financing.</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
@@ -941,6 +989,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <article class="chapter" id="ch-4">
 <h3>4. Quantitative Aptitude (Interest, Ratios, Statistics, Probability)</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Index numbers — three formulae</p>
+  <svg class="dg" viewBox="0 0 680 123" role="img" aria-label="Index numbers — three formulae">
+    <rect class="p1" x="20" y="20" width="157" height="79" rx="12"/>
+    <text class="th nt" x="98.5" y="43">Laspeyres</text>
+    <text class="ts nt" x="98.5" y="62">base-year weights</text>
+    <text class="ts nt" x="98.5" y="77">Σp₁q₀/Σp₀q₀</text>
+    <rect class="p2" x="193" y="20" width="157" height="79" rx="12"/>
+    <text class="th nt" x="271.5" y="43">Paasche</text>
+    <text class="ts nt" x="271.5" y="62">current-year weights</text>
+    <text class="ts nt" x="271.5" y="77">Σp₁q₁/Σp₀q₁</text>
+    <rect class="p3" x="366" y="20" width="157" height="79" rx="12"/>
+    <text class="th nt" x="444.5" y="43">Fisher</text>
+    <text class="ts nt" x="444.5" y="62">geometric mean</text>
+    <text class="ts nt" x="444.5" y="77">√(L×P) – ideal</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div>
 <div class="chapter-body">
 <p>Quantitative Aptitude rewards formula fluency plus one skill: <strong>reading what the question actually asks</strong> — rate vs amount, nominal vs effective, mean vs median. Work every formula below with a small numerical check until it is automatic.</p>
 <h4>Interest and time value of money</h4>
@@ -14345,6 +14411,28 @@ z
 </div>
 
 <h3>5. Business Economics (Micro &amp; Macro)</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Market structures — four compared</p>
+  <svg class="dg" viewBox="0 0 680 218" role="img" aria-label="Market structures — four compared">
+    <rect class="p1" x="20" y="20" width="182.3" height="79" rx="12"/>
+    <text class="th nt" x="111.2" y="43">Perfect competition</text>
+    <text class="ts nt" x="111.2" y="62">many sellers</text>
+    <text class="ts nt" x="111.2" y="77">price takers</text>
+    <rect class="p2" x="218.3" y="20" width="182.3" height="79" rx="12"/>
+    <text class="th nt" x="309.5" y="43">Monopoly</text>
+    <text class="ts nt" x="309.5" y="62">single seller</text>
+    <text class="ts nt" x="309.5" y="77">price maker</text>
+    <rect class="p3" x="20" y="115" width="182.3" height="79" rx="12"/>
+    <text class="th nt" x="111.2" y="138">Oligopoly</text>
+    <text class="ts nt" x="111.2" y="157">few giants</text>
+    <text class="ts nt" x="111.2" y="172">kinked demand</text>
+    <rect class="p4" x="218.3" y="115" width="182.3" height="79" rx="12"/>
+    <text class="th nt" x="309.5" y="138">Monopolistic</text>
+    <text class="ts nt" x="309.5" y="157">many, differentiated</text>
+    <text class="ts nt" x="309.5" y="172">ads matter</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div>
 <div class="chapter-body">
 <p>Business Economics splits into two halves: <strong>micro</strong> (how firms and consumers decide) and <strong>macro</strong> (how the whole economy behaves). The micro half is diagram-heavy; the macro half is definition-heavy. Master both vocabularies.</p>
 <h4>Foundations: scarcity, choice, and the PPC</h4>
@@ -14405,7 +14493,41 @@ z
 </div>
 </article>
 
-<article class="chapter" id="ch-6"><h3>6. Income Tax: Heads of Income, Deductions &amp; Computation Basics</h3><div class="chapter-body">
+<article class="chapter" id="ch-6"><h3>6. Income Tax: Heads of Income, Deductions &amp; Computation Basics</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Deductions — 80C to 80U umbrella</p>
+  <svg class="dg" viewBox="0 0 700 440" role="img" aria-label="Deductions — 80C to 80U umbrella">
+    <line class="ln" x1="350" y1="175" x2="350" y2="130"/>
+    <polygon class="hd" points="356,140 344,140 350,130"/>
+    <line class="ln" x1="445.4" y1="203.2" x2="486.4" y2="196"/>
+    <polygon class="hd" points="477.6,203.6 475.5,191.8 486.4,196"/>
+    <line class="ln" x1="405" y1="261" x2="442.8" y2="289.2"/>
+    <polygon class="hd" points="431.2,288 438.4,278.4 442.8,289.2"/>
+    <line class="ln" x1="295" y1="261" x2="257.2" y2="289.2"/>
+    <polygon class="hd" points="261.6,278.4 268.8,288 257.2,289.2"/>
+    <line class="ln" x1="254.6" y1="203.2" x2="213.6" y2="196"/>
+    <polygon class="hd" points="224.5,191.8 222.4,203.6 213.6,196"/>
+    <rect class="p1" x="264.5" y="185" width="171.1" height="70" rx="14"/>
+    <text class="th nt" x="350" y="211">Chapter VI-A</text>
+    <text class="ts nt" x="350" y="230">reduce taxable income</text>
+    <rect class="p2" x="268" y="58" width="164" height="64" rx="12"/>
+    <text class="th nt" x="350" y="81">80C</text>
+    <text class="ts nt" x="350" y="100">₹1.5L · PPF, ELSS</text>
+    <rect class="p3" x="496.3" y="147.8" width="164" height="64" rx="12"/>
+    <text class="th nt" x="578.3" y="170.8">80D</text>
+    <text class="ts nt" x="578.3" y="189.8">health insurance</text>
+    <rect class="p4" x="409.1" y="293.2" width="164" height="64" rx="12"/>
+    <text class="th nt" x="491.1" y="316.2">80E</text>
+    <text class="ts nt" x="491.1" y="335.2">education loan</text>
+    <rect class="p5" x="126.9" y="293.2" width="164" height="64" rx="12"/>
+    <text class="th nt" x="208.9" y="316.2">80G</text>
+    <text class="ts nt" x="208.9" y="335.2">donations</text>
+    <rect class="p6" x="39.7" y="147.8" width="164" height="64" rx="12"/>
+    <text class="th nt" x="121.7" y="170.8">80TTA</text>
+    <text class="ts nt" x="121.7" y="189.8">savings interest</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>Income tax in India is charged on the <strong>total income</strong> of the previous year at the rates in force for the relevant assessment year. Every rupee of income must be slotted into one of the <strong>five heads of income</strong> (Sections 14–59), and each head has its own computation rules. The CA exam rewards a disciplined method: classify first, compute under each head, then aggregate, then deduct Chapter VI-A deductions, then apply rates.</p>
 <h4>The five heads of income</h4>
 <table><thead><tr><th>Head</th><th>Sections</th><th>Key points</th></tr></thead><tbody>
@@ -14443,40 +14565,64 @@ z
 <div class="dg-wrap">
   <p class="dg-title">Income-tax computation ladder — top to bottom</p>
   <svg class="dg" viewBox="0 0 520 560" role="img" aria-label="tax computation ladder">
-    <rect class="bx" x="110" y="20" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="45">GROSS TOTAL INCOME</text>
-    <text class="ts" x="260" y="65">sum of 5 heads</text>
+    <rect class="p1" x="110" y="20" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="45">GROSS TOTAL INCOME</text>
+    <text class="ts nt" x="260" y="65">sum of 5 heads</text>
     <line class="ln" x1="260.0" y1="82.0" x2="260.0" y2="103.0"/>
     <polygon class="hd" points="260.0,112.0 255.1,103.0 264.9,103.0"/>
-    <rect class="bxb" x="110" y="112" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="137">(−) Chapter VI-A deductions</text>
-    <text class="ts" x="260" y="157">80C to 80U</text>
+    <rect class="p2" x="110" y="112" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="137">(−) Chapter VI-A deductions</text>
+    <text class="ts nt" x="260" y="157">80C to 80U</text>
     <line class="ln" x1="260.0" y1="174.0" x2="260.0" y2="195.0"/>
     <polygon class="hd" points="260.0,204.0 255.1,195.0 264.9,195.0"/>
-    <rect class="bxg" x="110" y="204" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="229">TOTAL INCOME</text>
-    <text class="ts" x="260" y="249">rounded off (Sec 288A)</text>
+    <rect class="p3" x="110" y="204" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="229">TOTAL INCOME</text>
+    <text class="ts nt" x="260" y="249">rounded off (Sec 288A)</text>
     <line class="ln" x1="260.0" y1="266.0" x2="260.0" y2="287.0"/>
     <polygon class="hd" points="260.0,296.0 255.1,287.0 264.9,287.0"/>
-    <rect class="bxa" x="110" y="296" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="321">TAX at slab rates</text>
-    <text class="ts" x="260" y="341">+ surcharge + 4% cess</text>
+    <rect class="p4" x="110" y="296" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="321">TAX at slab rates</text>
+    <text class="ts nt" x="260" y="341">+ surcharge + 4% cess</text>
     <line class="ln" x1="260.0" y1="358.0" x2="260.0" y2="379.0"/>
     <polygon class="hd" points="260.0,388.0 255.1,379.0 264.9,379.0"/>
-    <rect class="bxb" x="110" y="388" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="413">(−) Rebate 87A / Relief 89</text>
-    <text class="ts" x="260" y="433">TDS/TCS credit</text>
+    <rect class="p5" x="110" y="388" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="413">(−) Rebate 87A / Relief 89</text>
+    <text class="ts nt" x="260" y="433">TDS/TCS credit</text>
     <line class="ln" x1="260.0" y1="450.0" x2="260.0" y2="471.0"/>
     <polygon class="hd" points="260.0,480.0 255.1,471.0 264.9,471.0"/>
-    <rect class="bxg" x="110" y="480" width="300" height="62" rx="10"/>
-    <text class="th" x="260" y="505">TAX PAYABLE</text>
-    <text class="ts" x="260" y="525">pay / refund</text>
+    <rect class="p6" x="110" y="480" width="300" height="62" rx="10"/>
+    <text class="th nt" x="260" y="505">TAX PAYABLE</text>
+    <text class="ts nt" x="260" y="525">pay / refund</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
 </div>
 
 </div></article>
-<article class="chapter" id="ch-7"><h3>7. GST: Levy, Input Tax Credit &amp; Returns Basics</h3><div class="chapter-body">
+<article class="chapter" id="ch-7"><h3>7. GST: Levy, Input Tax Credit &amp; Returns Basics</h3>
+<div class="dg-wrap">
+  <p class="dg-title">GST returns — the monthly calendar</p>
+  <svg class="dg" viewBox="0 0 680 152" role="img" aria-label="GST returns — the monthly calendar">
+    <rect class="p1" x="20" y="64" width="120.7" height="64" rx="10"/>
+    <text class="th nt" x="80.3" y="85">GSTR-1</text>
+    <text class="ts nt" x="80.3" y="104">11th · outward</text>
+    <line class="ln" x1="140.7" y1="96" x2="172.7" y2="96"/>
+    <polygon class="hd" points="163.7,90 163.7,102 172.7,96"/>
+    <rect class="p2" x="176.7" y="64" width="126.8" height="64" rx="10"/>
+    <text class="th nt" x="240.1" y="85">GSTR-2B</text>
+    <text class="ts nt" x="240.1" y="104">14th · auto ITC</text>
+    <line class="ln" x1="303.4" y1="96" x2="335.4" y2="96"/>
+    <polygon class="hd" points="326.4,90 326.4,102 335.4,96"/>
+    <rect class="p3" x="339.4" y="64" width="120.7" height="64" rx="10"/>
+    <text class="th nt" x="399.8" y="85">GSTR-3B</text>
+    <text class="ts nt" x="399.8" y="104">20th · pay tax</text>
+    <line class="ln" x1="460.1" y1="96" x2="492.1" y2="96"/>
+    <polygon class="hd" points="483.1,90 483.1,102 492.1,96"/>
+    <rect class="p4" x="496.1" y="64" width="126.8" height="64" rx="10"/>
+    <text class="th nt" x="559.5" y="85">GSTR-9</text>
+    <text class="ts nt" x="559.5" y="104">Dec 31 · annual</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>Goods and Services Tax is a destination-based tax on the <strong>supply</strong> of goods or services, levied concurrently by the Centre and the States: CGST + SGST on intra-state supplies, IGST on inter-state supplies (and imports), UTGST in union territories without legislatures. Introduced by the 101st Constitutional Amendment (2016), GST subsumed excise, service tax, VAT, entry tax and a host of cesses into one framework.</p>
 <h4>Levy and charge (Sections 7–9, CGST Act)</h4>
 <ul>
@@ -14501,33 +14647,33 @@ z
 <div class="dg-wrap">
   <p class="dg-title">Input Tax Credit — the four-gate flowchart (Sec 16)</p>
   <svg class="dg" viewBox="0 0 560 560" role="img" aria-label="ITC flowchart">
-    <rect class="bxb" x="130" y="20" width="300" height="62" rx="10"/>
-    <text class="t" x="280" y="45">Registered dealer?</text>
-    <text class="tss" x="280" y="65">Sec 16(1)</text>
+    <rect class="p1" x="130" y="20" width="300" height="62" rx="10"/>
+    <text class="t nt" x="280" y="45">Registered dealer?</text>
+    <text class="tss nt" x="280" y="65">Sec 16(1)</text>
     <text class="tss" x="470" y="56">No → blocked</text>
     <line class="ln" x1="280.0" y1="82.0" x2="280.0" y2="105.0"/>
     <polygon class="hd" points="280.0,114.0 275.1,105.0 284.9,105.0"/>
-    <rect class="bxb" x="130" y="114" width="300" height="62" rx="10"/>
-    <text class="t" x="280" y="139">Tax invoice / debit note held?</text>
-    <text class="tss" x="280" y="159">Sec 16(2)(a)</text>
+    <rect class="p2" x="130" y="114" width="300" height="62" rx="10"/>
+    <text class="t nt" x="280" y="139">Tax invoice / debit note held?</text>
+    <text class="tss nt" x="280" y="159">Sec 16(2)(a)</text>
     <text class="tss" x="470" y="150">No → blocked</text>
     <line class="ln" x1="280.0" y1="176.0" x2="280.0" y2="199.0"/>
     <polygon class="hd" points="280.0,208.0 275.1,199.0 284.9,199.0"/>
-    <rect class="bxb" x="130" y="208" width="300" height="62" rx="10"/>
-    <text class="t" x="280" y="233">Goods / services RECEIVED?</text>
-    <text class="tss" x="280" y="253">Sec 16(2)(b)</text>
+    <rect class="p3" x="130" y="208" width="300" height="62" rx="10"/>
+    <text class="t nt" x="280" y="233">Goods / services RECEIVED?</text>
+    <text class="tss nt" x="280" y="253">Sec 16(2)(b)</text>
     <text class="tss" x="470" y="244">No → blocked</text>
     <line class="ln" x1="280.0" y1="270.0" x2="280.0" y2="293.0"/>
     <polygon class="hd" points="280.0,302.0 275.1,293.0 284.9,293.0"/>
-    <rect class="bxb" x="130" y="302" width="300" height="62" rx="10"/>
-    <text class="t" x="280" y="327">Supplier filed GSTR-1 &amp; paid tax?</text>
-    <text class="tss" x="280" y="347">Sec 16(2)(c)</text>
+    <rect class="p4" x="130" y="302" width="300" height="62" rx="10"/>
+    <text class="t nt" x="280" y="327">Supplier filed GSTR-1 &amp; paid tax?</text>
+    <text class="tss nt" x="280" y="347">Sec 16(2)(c)</text>
     <text class="tss" x="470" y="338">No → blocked</text>
     <line class="ln" x1="280.0" y1="364.0" x2="280.0" y2="387.0"/>
     <polygon class="hd" points="280.0,396.0 275.1,387.0 284.9,387.0"/>
-    <rect class="bxg" x="130" y="396" width="300" height="62" rx="10"/>
-    <text class="th" x="280" y="421">ITC AVAILABLE</text>
-    <text class="ts" x="280" y="441">claim in GSTR-3B</text>
+    <rect class="p5" x="130" y="396" width="300" height="62" rx="10"/>
+    <text class="th nt" x="280" y="421">ITC AVAILABLE</text>
+    <text class="ts nt" x="280" y="441">claim in GSTR-3B</text>
     <text class="tss" x="280" y="540">180-day rule: pay the supplier within 180 days or reverse the credit.</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
@@ -14542,7 +14688,47 @@ z
 <h4>Common traps</h4>
 <p>Confusing place-of-supply rules (they decide CGST+SGST vs IGST, not the rate); claiming ITC on blocked credits; forgetting the GSTR-2B matching discipline — ITC beyond what appears in auto-drafted statements invites scrutiny; and treating exempt, nil-rated and zero-rated supplies identically — zero-rated (exports, SEZ) allows ITC refund, exempt does not.</p>
 </div></article>
-<article class="chapter" id="ch-8"><h3>8. Auditing: Standards, Evidence &amp; Company Audit</h3><div class="chapter-body">
+<article class="chapter" id="ch-8"><h3>8. Auditing: Standards, Evidence &amp; Company Audit</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Types of audit — five compared</p>
+  <svg class="dg" viewBox="0 0 680 203" role="img" aria-label="Types of audit — five compared">
+    <rect class="p1" x="20" y="20" width="150" height="79" rx="12"/>
+    <text class="th nt" x="95" y="43">Statutory</text>
+    <text class="ts nt" x="95" y="62">Companies Act</text>
+    <text class="ts nt" x="95" y="77">mandatory</text>
+    <rect class="p2" x="186" y="20" width="150" height="79" rx="12"/>
+    <text class="th nt" x="261" y="50.5">Internal</text>
+    <text class="ts nt" x="261" y="69.5">management tool</text>
+    <rect class="p3" x="352" y="20" width="150" height="79" rx="12"/>
+    <text class="th nt" x="427" y="50.5">Concurrent</text>
+    <text class="ts nt" x="427" y="69.5">banks, real-time</text>
+    <rect class="p4" x="20" y="115" width="150" height="64" rx="12"/>
+    <text class="th nt" x="95" y="138">Tax audit</text>
+    <text class="ts nt" x="95" y="157">Sec 44AB</text>
+    <rect class="p5" x="186" y="115" width="150" height="64" rx="12"/>
+    <text class="th nt" x="261" y="138">Cost audit</text>
+    <text class="ts nt" x="261" y="157">Sec 148</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div>
+<div class="dg-wrap">
+  <p class="dg-title">Audit report — four opinions</p>
+  <svg class="dg" viewBox="0 0 680 108" role="img" aria-label="Audit report — four opinions">
+    <rect class="p1" x="20" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="94" y="43">Unmodified</text>
+    <text class="ts nt" x="94" y="62">clean chit</text>
+    <rect class="p2" x="184" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="258" y="43">Qualified</text>
+    <text class="ts nt" x="258" y="62">except for…</text>
+    <rect class="p3" x="348" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="422" y="43">Adverse</text>
+    <text class="ts nt" x="422" y="62">misleading FS</text>
+    <rect class="p4" x="512" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="586" y="43">Disclaimer</text>
+    <text class="ts nt" x="586" y="62">no opinion</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>An audit is an independent examination of financial information to express an opinion on whether the financial statements give a true and fair view. Under the CA course, auditing rests on three pillars: the <strong>Standards on Auditing (SAs)</strong> issued by ICAI's AASB, the <strong>Companies Act, 2013</strong> provisions on company audit, and the <strong>Code of Ethics</strong> governing chartered accountants.</p>
 <h4>Key Standards on Auditing</h4>
 <table><thead><tr><th>SA</th><th>Subject</th><th>Exam essence</th></tr></thead><tbody>
@@ -14577,7 +14763,28 @@ z
 <p>The CA Act, 1949 (Schedules I and II) defines professional misconduct — e.g., disclosing client information, soliciting work by advertisement (with defined exceptions), undercutting fees, or certifying without verification. The ICAI Code of Ethics rests on integrity, objectivity, professional competence and due care, confidentiality, and professional behaviour; threats (self-interest, self-review, advocacy, familiarity, intimidation) must be identified and safeguarded.</p>
 <p><strong>Common traps:</strong> claiming absolute assurance; calling vouching and verification the same thing; forgetting the Board's 30-day window for the first auditor; applying rotation to every company; and treating a qualified opinion and an emphasis-of-matter paragraph as interchangeable — a qualification modifies the opinion, an EOM does not.</p>
 </div></article>
-<article class="chapter" id="ch-9"><h3>9. Financial Management: Ratios, Leverage &amp; Capital Budgeting</h3><div class="chapter-body">
+<article class="chapter" id="ch-9"><h3>9. Financial Management: Ratios, Leverage &amp; Capital Budgeting</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Capital budgeting — five techniques</p>
+  <svg class="dg" viewBox="0 0 680 188" role="img" aria-label="Capital budgeting — five techniques">
+    <rect class="p1" x="20" y="20" width="187.2" height="64" rx="12"/>
+    <text class="th nt" x="113.6" y="43">Payback</text>
+    <text class="ts nt" x="113.6" y="62">time to recover</text>
+    <rect class="p2" x="223.2" y="20" width="187.2" height="64" rx="12"/>
+    <text class="th nt" x="316.9" y="43">ARR</text>
+    <text class="ts nt" x="316.9" y="62">avg profit / cost</text>
+    <rect class="p3" x="426.5" y="20" width="187.2" height="64" rx="12"/>
+    <text class="th nt" x="520.1" y="43">NPV</text>
+    <text class="ts nt" x="520.1" y="62">discounted – accept if &gt;0</text>
+    <rect class="p4" x="20" y="100" width="187.2" height="64" rx="12"/>
+    <text class="th nt" x="113.6" y="123">IRR</text>
+    <text class="ts nt" x="113.6" y="142">NPV=0 rate</text>
+    <rect class="p5" x="223.2" y="100" width="187.2" height="64" rx="12"/>
+    <text class="th nt" x="316.9" y="123">PI</text>
+    <text class="ts nt" x="316.9" y="142">PV / outflow &gt;1</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>Financial management is about three decisions: <strong>investment</strong> (where to put money), <strong>financing</strong> (how to raise it), and <strong>dividend</strong> (how much to return). The CA paper tests these through ratio analysis, leverage measurement, cost of capital, and capital budgeting — all formula-heavy, so learn each formula with its decision rule.</p>
 <h4>Ratio analysis</h4>
 <table><thead><tr><th>Category</th><th>Ratio</th><th>Formula</th><th>Reads as</th></tr></thead><tbody>
@@ -14604,21 +14811,21 @@ z
 <div class="dg-wrap">
   <p class="dg-title">Leverage — operating, financial, combined</p>
   <svg class="dg" viewBox="0 0 680 300" role="img" aria-label="leverage trio">
-    <rect class="bxa" x="30" y="50" width="200" height="170" rx="10"/>
-    <text class="th" x="130" y="80">OPERATING</text>
-    <text class="ts" x="130" y="110">Sales ↔ EBIT</text>
-    <text class="ts" x="130" y="136">fixed OPERATING costs</text>
-    <text class="ts" x="130" y="162">DOL = %ΔEBIT / %ΔSales</text>
-    <rect class="bxb" x="240" y="50" width="200" height="170" rx="10"/>
-    <text class="th" x="340" y="80">FINANCIAL</text>
-    <text class="ts" x="340" y="110">EBIT ↔ EPS</text>
-    <text class="ts" x="340" y="136">fixed FINANCIAL costs</text>
-    <text class="ts" x="340" y="162">DFL = %ΔEPS / %ΔEBIT</text>
-    <rect class="bxg" x="450" y="50" width="200" height="170" rx="10"/>
-    <text class="th" x="550" y="80">COMBINED</text>
-    <text class="ts" x="550" y="110">Sales ↔ EPS</text>
-    <text class="ts" x="550" y="136">both fixed costs</text>
-    <text class="ts" x="550" y="162">DCL = DOL × DFL</text>
+    <rect class="p1" x="30" y="50" width="200" height="170" rx="10"/>
+    <text class="th nt" x="130" y="80">OPERATING</text>
+    <text class="ts nt" x="130" y="110">Sales ↔ EBIT</text>
+    <text class="ts nt" x="130" y="136">fixed OPERATING costs</text>
+    <text class="ts nt" x="130" y="162">DOL = %ΔEBIT / %ΔSales</text>
+    <rect class="p2" x="240" y="50" width="200" height="170" rx="10"/>
+    <text class="th nt" x="340" y="80">FINANCIAL</text>
+    <text class="ts nt" x="340" y="110">EBIT ↔ EPS</text>
+    <text class="ts nt" x="340" y="136">fixed FINANCIAL costs</text>
+    <text class="ts nt" x="340" y="162">DFL = %ΔEPS / %ΔEBIT</text>
+    <rect class="p3" x="450" y="50" width="200" height="170" rx="10"/>
+    <text class="th nt" x="550" y="80">COMBINED</text>
+    <text class="ts nt" x="550" y="110">Sales ↔ EPS</text>
+    <text class="ts nt" x="550" y="136">both fixed costs</text>
+    <text class="ts nt" x="550" y="162">DCL = DOL × DFL</text>
     <text class="tss" x="340" y="262">Higher leverage = higher risk, higher reward — the examiner&#x27;s favourite trade-off.</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
@@ -14640,7 +14847,34 @@ z
 <p>Operating cycle = Inventory days + Receivables days − Payables days. Permanent vs temporary working capital; the hedging (matching) approach vs conservative vs aggressive financing policies. EOQ = √(2AO ÷ C) for inventory ordering; cash management via the Baumol model. Receivables policy trades off credit sales growth against bad debts and collection cost.</p>
 <p><strong>Common traps:</strong> using book values instead of market values in WACC; forgetting the (1 − t) on debt; applying ARR to cash flows or payback to discounted flows; ranking mutually exclusive projects by IRR instead of NPV; and ignoring working-capital release in the terminal year of a project.</p>
 </div></article>
-<article class="chapter" id="ch-10"><h3>10. Business Correspondence, Ethics &amp; Communication</h3><div class="chapter-body">
+<article class="chapter" id="ch-10"><h3>10. Business Correspondence, Ethics &amp; Communication</h3>
+<div class="dg-wrap">
+  <p class="dg-title">7 Cs of communication</p>
+  <svg class="dg" viewBox="0 0 680 188" role="img" aria-label="7 Cs of communication">
+    <rect class="p1" x="20" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="94" y="43">Clear</text>
+    <text class="ts nt" x="94" y="62">one idea</text>
+    <rect class="p2" x="184" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="258" y="43">Concise</text>
+    <text class="ts nt" x="258" y="62">no fluff</text>
+    <rect class="p3" x="348" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="422" y="43">Concrete</text>
+    <text class="ts nt" x="422" y="62">facts, figures</text>
+    <rect class="p4" x="512" y="20" width="148" height="64" rx="12"/>
+    <text class="th nt" x="586" y="43">Correct</text>
+    <text class="ts nt" x="586" y="62">error-free</text>
+    <rect class="p5" x="20" y="100" width="148" height="64" rx="12"/>
+    <text class="th nt" x="94" y="123">Coherent</text>
+    <text class="ts nt" x="94" y="142">logical flow</text>
+    <rect class="p6" x="184" y="100" width="148" height="64" rx="12"/>
+    <text class="th nt" x="258" y="123">Complete</text>
+    <text class="ts nt" x="258" y="142">all facts</text>
+    <rect class="p1" x="348" y="100" width="148" height="64" rx="12"/>
+    <text class="th nt" x="422" y="123">Courteous</text>
+    <text class="ts nt" x="422" y="142">respectful</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>This area (CA Foundation Paper 2, Section B — Business Correspondence and Reporting) tests whether you can communicate like a professional: draft precisely, structure documents correctly, and act ethically. Marks come from format discipline and formal register, not vocabulary display.</p>
 <h4>The communication process</h4>
 <p>Sender → encoding → message → channel → decoding → receiver → feedback, with noise at every stage. Types: <strong>verbal</strong> (oral/written), <strong>non-verbal</strong> (body language, paralanguage, proxemics, chronemics), <strong>formal</strong> (follows the chain of command — upward, downward, horizontal) and <strong>informal/grapevine</strong> (fast, but prone to distortion). Barriers: semantic (jargon, ambiguous words), psychological (prejudice, inattention), organisational (hierarchy, information overload), physical (distance, faulty channels), and cultural. Overcoming them: clarity, active listening, feedback loops, appropriate channel choice, and empathy.</p>
@@ -14668,7 +14902,31 @@ z
 <p><strong>Sentence-level craft:</strong> define technical terms on first use, keep one idea per sentence, and match the document's register to its audience — a board report tolerates jargon a client letter must explain. Avoid redundancy ("advance planning", "end result"), prefer concrete verbs over nominalisations ("we recommend" beats "a recommendation is made"), and proofread for agreement errors, which examiners penalise in drafting questions.</p>
 <p><strong>Common traps:</strong> informal register in formal drafts (contractions, slang); missing format elements (subject line, designation in signature); précis that copies sentences instead of condensing ideas; ethics answers that moralise instead of applying the threat-and-safeguard framework; and confusing minutes (record of what was decided) with reports (analysis with recommendations).</p>
 </div></article>
-<article class="chapter" id="ch-11"><h3>11. Accounting Standards: AS-1 to AS-29 Exam Map</h3><div class="chapter-body">
+<article class="chapter" id="ch-11"><h3>11. Accounting Standards: AS-1 to AS-29 Exam Map</h3>
+<div class="dg-wrap">
+  <p class="dg-title">AS-9 revenue recognition — four conditions</p>
+  <svg class="dg" viewBox="0 0 680 406" role="img" aria-label="AS-9 revenue recognition — four conditions">
+    <rect class="p1" x="246.8" y="24" width="186.3" height="64" rx="10"/>
+    <text class="th nt" x="340" y="46">Risks transferred</text>
+    <text class="ts nt" x="340" y="65">to buyer</text>
+    <line class="ln" x1="340" y1="88" x2="340" y2="118"/>
+    <polygon class="hd" points="334,109 346,109 340,118"/>
+    <rect class="p2" x="246.8" y="122" width="186.3" height="64" rx="10"/>
+    <text class="th nt" x="340" y="144">No control retained</text>
+    <text class="ts nt" x="340" y="163">over goods</text>
+    <line class="ln" x1="340" y1="186" x2="340" y2="216"/>
+    <polygon class="hd" points="334,207 346,207 340,216"/>
+    <rect class="p3" x="246.8" y="220" width="186.3" height="64" rx="10"/>
+    <text class="th nt" x="340" y="242">Measurable</text>
+    <text class="ts nt" x="340" y="261">amount certain</text>
+    <line class="ln" x1="340" y1="284" x2="340" y2="314"/>
+    <polygon class="hd" points="334,305 346,305 340,314"/>
+    <rect class="p4" x="246.8" y="318" width="186.3" height="64" rx="10"/>
+    <text class="th nt" x="340" y="340">Collection probable</text>
+    <text class="ts nt" x="340" y="359">no uncertainty</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>Accounting Standards are the favourite theory-plus-application area of CA Foundation Paper 1 (Accounting) and return in harder form at Inter (AS and Ind AS). Examiners test three things: which standard governs a situation, the core recognition or measurement rule, and the mandatory disclosures. Learn the standards as a map, not as isolated paragraphs — each standard answers one question: <em>when</em> do we recognize an item, <em>how</em> do we measure it, and <em>what</em> must we disclose.</p>
 <h4>The framework standards: AS-1, AS-5, AS-29</h4>
 <p><strong>AS-1 (Disclosure of Accounting Policies)</strong> names three fundamental accounting assumptions — going concern, consistency and accrual. If they are followed, no disclosure is needed; if any is not followed, the fact must be disclosed. <strong>AS-5 (Net Profit or Loss, Prior Period Items and Changes in Accounting Policies)</strong> separates ordinary activities from extraordinary items and prior period items, and insists that a change in accounting policy be made only when required by statute, by a standard, or for better presentation — with the effect disclosed. <strong>AS-29 (Provisions, Contingent Liabilities and Contingent Assets)</strong> is the gatekeeper of prudence: a provision is recognized only when there is a present obligation from a past event, a probable outflow, and a reliable estimate. Contingent liabilities are disclosed (never recognized) unless the outflow is remote; contingent assets are never recognized and are disclosed only when the inflow is probable.</p>
@@ -14684,7 +14942,28 @@ z
 <li>Disclosure requirements are the easiest marks in the paper — revise the disclosure list of each standard separately in the last week.</li>
 </ul>
 </div></article>
-<article class="chapter" id="ch-12"><h3>12. Cost &amp; Management Accounting: Inter/Final Bridge</h3><div class="chapter-body">
+<article class="chapter" id="ch-12"><h3>12. Cost &amp; Management Accounting: Inter/Final Bridge</h3>
+<div class="dg-wrap">
+  <p class="dg-title">Variance analysis — the three-branch tree</p>
+  <svg class="dg" viewBox="0 0 680 242" role="img" aria-label="Variance analysis — the three-branch tree">
+    <rect class="p1" x="244.8" y="20" width="190.3" height="70" rx="12"/>
+    <text class="th nt" x="340" y="46">Total cost variance</text>
+    <text class="ts nt" x="340" y="65">standard vs actual</text>
+    <line class="ln" x1="340" y1="90" x2="115" y2="148"/>
+    <rect class="p2" x="20" y="154" width="190" height="64" rx="12"/>
+    <text class="th nt" x="115" y="177">Material</text>
+    <text class="ts nt" x="115" y="196">price + usage</text>
+    <line class="ln" x1="340" y1="90" x2="323" y2="148"/>
+    <rect class="p3" x="228" y="154" width="190" height="64" rx="12"/>
+    <text class="th nt" x="323" y="177">Labour</text>
+    <text class="ts nt" x="323" y="196">rate + efficiency</text>
+    <line class="ln" x1="340" y1="90" x2="531" y2="148"/>
+    <rect class="p4" x="436" y="154" width="190" height="64" rx="12"/>
+    <text class="th nt" x="531" y="177">Overhead</text>
+    <text class="ts nt" x="531" y="196">variable + fixed</text>
+  </svg>
+  <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
+</div><div class="chapter-body">
 <p>Cost accounting begins where financial accounting ends: financial accounts tell you the profit; cost accounts tell you <em>why</em> — which product, department or activity earned it. This chapter bridges Foundation costing basics to the CA Intermediate Cost and Management Accounting paper. The entire subject rests on one discipline: classifying every rupee of cost correctly, then choosing the right technique for the decision at hand.</p>
 <h4>Cost classification — the foundation of everything</h4>
 <p>Costs are classified by <strong>nature</strong> (material, labour, expenses), by <strong>function</strong> (production, administration, selling and distribution), by <strong>behaviour</strong> (fixed, variable, semi-variable), and by <strong>traceability</strong> (direct vs indirect). Direct costs are traced to a cost object; indirect costs (overheads) are apportioned and then absorbed, usually on a base like labour hours or machine hours. The exam favourite is behaviour: fixed costs stay constant in total within the relevant range, variable costs move in direct proportion to output, and semi-variable costs (like a telephone bill with a fixed rental plus call charges) have both elements. Marginal costing treats only variable costs as product costs and writes off fixed costs as period costs; absorption costing charges both to the product — so the two methods report different profits whenever inventory levels change.</p>
@@ -14692,32 +14971,32 @@ z
 <div class="dg-wrap">
   <p class="dg-title">Cost classification — the four bases</p>
   <svg class="dg" viewBox="0 0 680 340" role="img" aria-label="cost classification tree">
-    <rect class="bxg" x="270" y="24" width="140" height="54" rx="10"/>
-    <text class="th" x="340" y="48">COST</text>
-    <text class="tss" x="340" y="66">total sacrifice</text>
+    <rect class="p1" x="270" y="24" width="140" height="54" rx="10"/>
+    <text class="th nt" x="340" y="48">COST</text>
+    <text class="tss nt" x="340" y="66">total sacrifice</text>
     <line class="ln" x1="340" y1="78" x2="95" y2="120"/>
-    <rect class="bxb" x="20" y="120" width="150" height="106" rx="10"/>
-    <text class="th" x="95" y="148">BY NATURE</text>
-    <text class="ts" x="95" y="172">material</text>
-    <text class="ts" x="95" y="194">labour</text>
-    <text class="ts" x="95" y="216">overhead</text>
+    <rect class="p2" x="20" y="120" width="150" height="106" rx="10"/>
+    <text class="th nt" x="95" y="148">BY NATURE</text>
+    <text class="ts nt" x="95" y="172">material</text>
+    <text class="ts nt" x="95" y="194">labour</text>
+    <text class="ts nt" x="95" y="216">overhead</text>
     <line class="ln" x1="340" y1="78" x2="255" y2="120"/>
-    <rect class="bxb" x="180" y="120" width="150" height="106" rx="10"/>
-    <text class="th" x="255" y="148">BY FUNCTION</text>
-    <text class="ts" x="255" y="172">production</text>
-    <text class="ts" x="255" y="194">administration</text>
-    <text class="ts" x="255" y="216">selling &amp; dist.</text>
+    <rect class="p3" x="180" y="120" width="150" height="106" rx="10"/>
+    <text class="th nt" x="255" y="148">BY FUNCTION</text>
+    <text class="ts nt" x="255" y="172">production</text>
+    <text class="ts nt" x="255" y="194">administration</text>
+    <text class="ts nt" x="255" y="216">selling &amp; dist.</text>
     <line class="ln" x1="340" y1="78" x2="415" y2="120"/>
-    <rect class="bxb" x="340" y="120" width="150" height="106" rx="10"/>
-    <text class="th" x="415" y="148">BY BEHAVIOUR</text>
-    <text class="ts" x="415" y="172">fixed</text>
-    <text class="ts" x="415" y="194">variable</text>
-    <text class="ts" x="415" y="216">semi-variable</text>
+    <rect class="p4" x="340" y="120" width="150" height="106" rx="10"/>
+    <text class="th nt" x="415" y="148">BY BEHAVIOUR</text>
+    <text class="ts nt" x="415" y="172">fixed</text>
+    <text class="ts nt" x="415" y="194">variable</text>
+    <text class="ts nt" x="415" y="216">semi-variable</text>
     <line class="ln" x1="340" y1="78" x2="575" y2="120"/>
-    <rect class="bxb" x="500" y="120" width="150" height="84" rx="10"/>
-    <text class="th" x="575" y="148">BY TRACEABILITY</text>
-    <text class="ts" x="575" y="172">direct</text>
-    <text class="ts" x="575" y="194">indirect</text>
+    <rect class="p5" x="500" y="120" width="150" height="84" rx="10"/>
+    <text class="th nt" x="575" y="148">BY TRACEABILITY</text>
+    <text class="ts nt" x="575" y="172">direct</text>
+    <text class="ts nt" x="575" y="194">indirect</text>
     <text class="tss" x="340" y="322">Behaviour (fixed/variable) drives every CVP and budgeting decision.</text>
   </svg>
   <p class="dg-cap">Redraw this from memory — every label is a potential one-mark answer.</p>
